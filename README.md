@@ -1,4 +1,5 @@
-# dmv-week6
+### week6 project  by Aziz , Tawfeek & Majd - 2021©.
+we used express , postgre sql and cookies
 
 our project idea is about the Department of Motor Vehicles,
 our website basiclly allows you to manage your cars and will display you the car details such as the car licence plate number, color,engine capacity,model ,year etc...
