@@ -17,7 +17,7 @@ const isProd = connectionString.includes("compute.amazonaws.com");
 
 const db = new pg.Pool({
   connectionString,
-  ...(isProd && { ssl: { rejectUnauthorized: false } }),
+  ...(isProd && { ssl: { rejectUnauthorized: true } }),
 });
 
 module.exports = db;

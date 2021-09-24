@@ -8,7 +8,6 @@ const signup = require("./handlers/signup");
 const loginfo = require("./handlers/logInfo");
 const logout = require("./handlers/logout");
 const main = require("./handlers/main.js");
-
 const notFound = require("./handlers/notFound");
 
 router.get("/", home);

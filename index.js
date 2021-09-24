@@ -4,6 +4,7 @@ const router = require("./router");
 const cookieParser = require("cookie-parser");
 const jwt = require("jsonwebtoken");
 
+//order of next linesis very important
 server.use(express.urlencoded({ extended: false }));
 server.use(cookieParser());
 server.use(express.static("public"));
