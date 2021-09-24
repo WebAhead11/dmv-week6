@@ -13,7 +13,7 @@ const connectionString = process.env.DB_URL;
 //   connectionString,
 // });
 
-const isProd = connectionString.includes("compute.amazonaws.com");
+const isProd = connectionString.includes("amazonaws.com");
 
 const db = new pg.Pool({
   connectionString,
