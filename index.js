@@ -9,6 +9,7 @@ server.use(cookieParser());
 server.use(express.static("public"));
 server.use(router);
 
+const PORT = process.env.PORT || 3000;
 const SECRET = process.env.SECRET;
 
 //should be checked deaply if there is need for it or better middleware AUTH
@@ -29,4 +30,4 @@ function handleErrors(error, req, res, next) {
 
 server.use(handleErrors);
 
-server.listen(3000);
+server.listen(PORT);
