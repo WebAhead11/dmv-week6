@@ -9,8 +9,15 @@ const connectionString = process.env.DB_URL;
 
 // create a pool of available connections
 // we can use this to query our database
+// const db = new pg.Pool({
+//   connectionString,
+// });
+
+const isProd = connectionString.includes("compute.amazonaws.com");
+
 const db = new pg.Pool({
   connectionString,
+  ...(isProd && { ssl: { rejectUnauthorized: false } }),
 });
 
 module.exports = db;
