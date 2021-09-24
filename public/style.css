@@ -1,0 +1,50 @@
+:root{
+    --font-alert: red;
+    --border-color: blue;
+    --transparent: transparent;
+    --placeHolderFont: blue;
+    --steelBlue: steelblue;
+    }
+    
+    body{
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     }
+    button{
+        border-radius: 5px;
+        border-color: var(--border-color);
+        background-color: var(--transparent);
+    }
+    #alertMsg{
+        color: var(--font-alert);
+        font-weight: bold;
+    }
+    
+    label{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    ::placeholder{
+        color:var(--placeHolderFont);
+    }
+    
+    .container{
+        width:300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 5px;
+        border-color: var(--border-color);
+        background-color:var(--steelBlue);
+        border-style: dotted;
+        padding: 20px;
+    }
+    
+    .inputDiv{
+        padding-bottom: 15px;
+    }
+    .divButton{
+        padding-top: 10px;
+    }
