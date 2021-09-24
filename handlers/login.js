@@ -3,7 +3,6 @@ const db = require("../db/connection");
 const cookieParser = require("cookie-parser");
 const jwt = require("jsonwebtoken");
 
-/*this is temp should be deleted*/
 const SECRET = process.env.SECRET;
 
 module.exports = (req, res) => {
@@ -32,17 +31,19 @@ module.exports = (req, res) => {
         res.cookie("user", token, { maxAge: 600000 });
         //this is the second cookie for only welcome MSG and to show who's logged in
         res.cookie("owner_name", user.owner_name);
+        //console.log("owner_name " + user.owner_name);
+        //console.log("from cookie " + req.cookie("owner_name"));
         return user.owner_name;
       });
-
-      res.send(
-        template(`
-      <h2>welcome back ${theOwner}</h2>
-      <div><a href='/logout'>Logout</a> | <a href='/UpdateAcount'>Update acount</a> | <a href='/DeleteAcount'>Remove acount</a></div>
-      <h2>Vehicles List</h2>
-      <a href='/addVehicle'>Add Vehicle</a>
-      `)
-      );
+      res.redirect("/main");
+      // res.send(
+      //   template(`
+      // <h2>welcome back ${theOwner}</h2>
+      // <div><a href='/logout'>Logout</a> | <a href='/UpdateAcount'>Update acount</a> | <a href='/DeleteAcount'>Remove acount</a></div>
+      // <h2>Vehicles List</h2>
+      // <a href='/addVehicle'>Add Vehicle</a>
+      // `)
+      // );
     }
     // res.status(200).send(template(`<li>Welcome back ${user.username}</li>`));
     //here we add anchor for adding vehicle and show vehicles list

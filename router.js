@@ -7,6 +7,7 @@ const login = require("./handlers/login");
 const signup = require("./handlers/signup");
 const loginfo = require("./handlers/logInfo");
 const logout = require("./handlers/logout");
+const main = require("./handlers/main.js");
 
 const notFound = require("./handlers/notFound");
 
@@ -15,10 +16,10 @@ router.post("/", login);
 router.get("/signup", signup);
 router.post("/loginfo", loginfo);
 router.get("/logout", logout);
+router.get("/main", main);
 
-//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 //when i add next line i got JS errors and style.css not load at all
-// router.get("/*", notFound);
+router.get("/*", notFound);
 
 function checkAuth(req, res, next) {
   const user = req.user;

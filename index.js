@@ -5,9 +5,9 @@ const cookieParser = require("cookie-parser");
 const jwt = require("jsonwebtoken");
 
 server.use(express.urlencoded({ extended: false }));
-server.use(router);
-server.use(express.static("public"));
 server.use(cookieParser());
+server.use(express.static("public"));
+server.use(router);
 
 const SECRET = process.env.SECRET;
 
@@ -20,12 +20,6 @@ server.use((req, res, next) => {
   }
   next();
 });
-
-// server.get("/error", (req, res, next) => {
-//   const fakeError = new Error("uh oh");
-//   fakeError.status = 403;
-//   next(fakeError);
-// });
 
 function handleErrors(error, req, res, next) {
   console.error(error);

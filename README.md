@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 # dmv-week6
-=======
 ### week6 project  by Aziz , Tawfeek & Majd - 2021©.
 we used express , postgre sql and cookies
->>>>>>> 4c31412986a3faa51a0f152cc211416f676ca8b0
-
+---
 our project idea is about the Department of Motor Vehicles,
 our website basiclly allows you to manage your cars and will display you the car details such as the car licence plate number, color,engine capacity,model ,year etc...
 ---
@@ -18,16 +15,13 @@ also the required fields has a "* symbol next to the field name so you can not s
 ---
 >-![image](https://user-images.githubusercontent.com/88267804/134514840-d16bb30e-0eab-4425-87f4-f93f7d4e8a18.png)
 ---
-<<<<<<< HEAD
 this is our login in form in order to access the website and the account you have to type in your username and password 
-=======
-this is our login in form in order to access the website and the account you have to type in your username and password.
 ---
 >-![image](https://user-images.githubusercontent.com/88267804/134660088-d1a027da-eccc-42e7-bc93-140a2d197739.png)
 ---
 after you sign up and log in for the first time you will see this page displayed on your screen with your name , obviously you have to add your vehicles 
 :point_up_2:
->>>>>>> 4c31412986a3faa51a0f152cc211416f676ca8b0
+
 ---
 now for our database tables 
 ---
@@ -53,8 +47,5 @@ and the last table of our database is for the vehicles of the user and their det
 ---
 >-![connection](https://user-images.githubusercontent.com/88267804/134521816-f8a5f8ed-ddfd-40d6-ba3e-40997b93cdfe.png)
 ---
-<<<<<<< HEAD
 ## as you can see above those are the connections that we used between the tables :point_up_2:
-=======
-## as you can see above those are the connections that we used between the tables :point_up_2:
->>>>>>> 4c31412986a3faa51a0f152cc211416f676ca8b0
+
