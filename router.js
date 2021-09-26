@@ -8,6 +8,7 @@ const signup = require("./handlers/signup");
 const loginfo = require("./handlers/logInfo");
 const logout = require("./handlers/logout");
 const main = require("./handlers/main.js");
+// const addVehicle = require("./handlers/addVehicle");
 const notFound = require("./handlers/notFound");
 
 router.get("/", home);
@@ -16,7 +17,7 @@ router.get("/signup", signup);
 router.post("/loginfo", loginfo);
 router.get("/logout", logout);
 router.get("/main", main);
-
+// router.get("/addVehicle", addVehicle);
 //when i add next line i got JS errors and style.css not load at all
 router.get("/*", notFound);
 

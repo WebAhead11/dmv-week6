@@ -20,6 +20,11 @@
         color: var(--font-alert);
         font-weight: bold;
     }
+    .alertMsg{
+        color: var(--font-alert);
+        font-weight: bold;
+        font-size: 17px;
+    }
     
     label{
         font-size: 14px;
